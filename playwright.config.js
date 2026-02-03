@@ -6,11 +6,11 @@ export default defineConfig({
   fullyParallel: false,
   forbidOnly: !!process.env.CI,
   retries: 1,
-  workers: 1,
+  workers: 4,
   reporter: "html",
   use: {
     video: "on-first-retry",
-    headless: false,
+    headless: true,
   },
 
   projects: [
